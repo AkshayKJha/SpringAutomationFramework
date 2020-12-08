@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding= "UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd"
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/beans/spring-util-3.0.xsd"
+        >
+        
+     <bean id="component1"
+        class="....component1"
+        lazy-init="true">
+        <property name="Widget">
+          <util:map map-class="java.util.HashMap">
+          <entry key= "button1" value="//xpathlocation" />
+          <entry key= "button2" value="//xpathlocation" />
+          <entry key= "button3" value="//xpathlocation" />
+          <entry key= "button4" value="//xpathlocation" />
+          </util:map>
+        </property>
+      </bean>
+ </beans>
